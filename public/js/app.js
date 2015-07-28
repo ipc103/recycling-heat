@@ -12,11 +12,11 @@ var getBinData = function(){
 	var url = "https://data.cityofnewyork.us/resource/sxx4-xhzg.json"
 	var binData = []
 	$.getJSON(url, function(data){
+		$("#total").text("Total Number of Bins: " + data.length.toString());
 		$.each(data, function(index, value){
 			if ( !isNaN(parseInt(value.latitude)) ) {
 				binData.push(new google.maps.LatLng(value.latitude, value.longitude));
 			};
-			
 		})
 	var heatmap = new google.maps.visualization.HeatmapLayer({
   	data: binData

@@ -1,5 +1,10 @@
+.wrapper {
+	text-align: center;
+}
 
 #map-canvas {
 	height: 800px;
 	width: 800px;
+	margin-left: 15%;
+	margin-right: 25%;
 }

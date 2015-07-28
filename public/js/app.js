@@ -2,10 +2,6 @@ $(function(){
 	getBinData();
 });
 
-var insertMap = function(){
-
-}
-
 var getBinData = function(){
 	var myLatlng = new google.maps.LatLng(40.7127, -74.0059);
 	var map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -27,5 +23,4 @@ var getBinData = function(){
 	});
 	heatmap.setMap(map);
 	})
-	
 }

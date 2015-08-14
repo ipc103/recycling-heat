@@ -1,10 +1,15 @@
 $(function(){
 	$("h1").hide();
+	$("p#info").hide();
 	$("#map-canvas").hide();
-	$("h1").fadeIn(2000).delay(1200).fadeOut('slow');
-	// setTimeout($("#map-canvas").fadeIn, 3000);
-	setTimeout(getBinData, 4000);
+	$("h1").fadeIn(1500).delay(1000).fadeOut(1500);
+	setTimeout(infoText, 5000);
+	setTimeout(getBinData, 9000);
 });
+
+var infoText = function(){
+	$("p#info").fadeIn(2000).delay(1000).fadeOut(2000);
+}
 
 var getBinData = function(){
 	// creates a new map

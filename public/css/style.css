@@ -2,18 +2,25 @@ body {
 	background-color: black;
 }
 
-h1 {
-	color: white;
-	font-family: Futura;
-	font-size: 100px;
-}
 .wrapper {
 	text-align: center;
 }
 
 #map-canvas {
-	height: 800px;
-	width: 800px;
+	height: 1000px;
+	width: 1000px;
 	margin-left: 15%;
 	margin-right: 25%;
+}
+
+h1 {
+	color: white;
+	font-family: Futura;
+	font-size: 100px;
+}
+
+p#info {
+	color: white;
+	font-family: Futura;
+	font-size: 100px;
 }

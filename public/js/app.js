@@ -2,13 +2,13 @@ $(function(){
 	$("h1").hide();
 	$("p#info").hide();
 	$("#map-canvas").hide();
-	$("h1").fadeIn(1500).delay(1000).fadeOut(1500);
-	setTimeout(infoText, 5000);
+	$("h1").fadeIn('slow').delay(1000).fadeOut('slow');
+	setTimeout(infoText, 2800);
 	setTimeout(getBinData, 9000);
 });
 
 var infoText = function(){
-	$("p#info").fadeIn(2000).delay(1000).fadeOut(2000);
+	$("p#info").fadeIn('slow').delay(1000).fadeOut('slow');
 }
 
 var getBinData = function(){
